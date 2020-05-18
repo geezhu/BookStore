@@ -9,7 +9,6 @@ rs=cur.fetchall()
 all_time = 0
 for line in rs:
     all_time += 1
-    print(line)
-print(all_time)
+print("总共的条目数量:%d"%(all_time))
 conn.commit()
 conn.close()
