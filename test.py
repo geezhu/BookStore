@@ -4,7 +4,7 @@ conn=sqlite3.connect("Bookstore.db")
 cur=conn.cursor()
 
 
-cur.execute("select * from users where username ='5DFB8AAM'")
+cur.execute("select * from payrecord ")
 rs=cur.fetchall()
 print(rs)
 all_time = 0
@@ -14,3 +14,5 @@ for line in rs:
 print("总共的条目数量:%d"%(all_time))
 conn.commit()
 conn.close()
+
+

@@ -1,7 +1,7 @@
 import string
 import sqlite3
 
-def registered(username,password):
+def registered(username,password):#注册
     conn = sqlite3.connect("Bookstore.db")
     cur = conn.cursor()
     cur.execute("SELECT * FROM users where username = '{}'".format(username))
