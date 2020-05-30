@@ -166,8 +166,10 @@ def recommend(username):#推荐书籍
     result = set()
     rs = cur.fetchall()
     for line in rs:
-        line_list = line.split("|")
+        line_list = line[0].split("|")
         for i in line_list:
             result.add(i)
 
     return result
+
+#print(recommend('ZZ99TLD2'))
