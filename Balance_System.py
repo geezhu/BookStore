@@ -1,6 +1,6 @@
 import string
 import sqlite3
-
+#余额系统
 def recharge(username,mon):#充值
     conn = sqlite3.connect("Bookstore.db")
     cur = conn.cursor()
